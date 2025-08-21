@@ -8,7 +8,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyCXuAZUoNYkUWvnQcxocEKdVrPpl65MV_Y",
   authDomain: "portfolio-designer-bb7ec.firebaseapp.com",
   projectId: "portfolio-designer-bb7ec",
-  storageBucket: "portfolio-designer-bb7ec.appspot.com",
+  storageBucket: "portfolio-designer-bb7ec.firebasestorage.app",
   messagingSenderId: "579185929693",
   appId: "1:579185929693:web:ec32109d0b60ba4bdc9a34"
 };
