@@ -8,18 +8,22 @@ import HomeLayout from '../components/HomeLayout';
 function AdminLoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-
       navigate('/admin/dashboard');
     } catch (error) {
       console.error('Firebase login failed:', error);
       alert('Invalid email or password.');
+      setPassword('');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -35,6 +39,7 @@ function AdminLoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              disabled={loading}
             />
             <input
               type="password"
@@ -42,8 +47,11 @@ function AdminLoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              disabled={loading}
             />
-            <button type="submit">Login</button>
+            <button type="submit" disabled={loading}>
+              {loading ? 'Logging in...' : 'Login'}
+            </button>
           </form>
         </div>
       </div>

@@ -14,15 +14,18 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public routes */}
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/:slug" element={<ProjectDetailPage />} />
         <Route path="/projects/create" element={<ProjectCreatePage />} />
-        <Route path="/admin/projects/edit/:id" element={<ProjectEditPage />} />
         <Route path="/admin/login" element={<AdminLoginPage />} />
+
+        {/* Protected admin routes */}
         <Route element={<PrivateRoute />}>
           <Route path="/admin/dashboard" element={<AdminDashboardPage />} />
+          <Route path="/admin/projects/edit/:id" element={<ProjectEditPage />} />
+          <Route path="/admin/logout" element={<AdminLogoutPage />} />
         </Route>
-        <Route path="/admin/logout" element={<AdminLogoutPage />} />
       </Routes>
     </BrowserRouter>
   );
