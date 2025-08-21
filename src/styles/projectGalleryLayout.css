@@ -1,0 +1,39 @@
+.image-gallery {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 100vh;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .gallery-image {
+    max-width: 85vw;
+  }
+}
+
+/* Optional message styling */
+.no-images-message {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  padding: 2rem;
+}

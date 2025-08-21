@@ -1,0 +1,201 @@
+.project-create-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.project-create-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-create-form input[type="text"],
+.project-create-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.project-create-form input[type="file"] {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.project-create-form img.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.thumbnail-preview-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.thumbnail-remove-btn {
+  top: 6px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  line-height: 28px;
+  background: rgba(220, 53, 69, 0.9);
+  transition: background-color 0.3s ease;
+}
+
+.thumbnail-remove-btn:hover {
+  background: rgba(220, 53, 69, 1);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(255, 0, 0, 0.8);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 0, 0, 1);
+}
+
+/* Position helper */
+.relative-position {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-create-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-create-form button[type="submit"]:hover {
+  background-color: #3c3ab9;
+}
+
+.category-select-label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.category-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.project-create-form input[readonly] {
+  background-color: #f3f3f3;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.project-images-container {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  align-items: flex-start; /* align children to left */
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.project-images-container h3,
+.project-container label {
+  width: 100%; /* full width so label and header stack */
+  margin: 0 0 1rem 0;
+}
+
+.project-container label input[type="file"] {
+  display: block;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.project-image-wrapper {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.project-image-wrapper:hover {
+  transform: scale(1.05);
+}
