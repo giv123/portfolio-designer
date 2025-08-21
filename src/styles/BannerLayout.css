@@ -1,0 +1,57 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  perspective: 1200px;
+  background: #fff5ec;
+  overflow: hidden;
+  user-select: none;
+}
+
+.banner-grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 8rem;
+  height: 100%;
+  text-align: left;
+}
+
+.banner-content {
+  max-width: 900px;
+  color: #ff7e6b;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.banner-subtitle {
+  font-weight: 500;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.4;
+}
+
+/* Smaller devices tweaks */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-grid {
+    padding: 0 2rem;
+  }
+}
+
+/* Smaller devices tweaks */
+@media (max-width: 480px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-grid {
+    padding: 0 1rem;
+  }
+}

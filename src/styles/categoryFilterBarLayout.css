@@ -1,58 +1,73 @@
-/* Filter Bar Container */
 .category-filter-bar {
+  height: 100px;
   position: sticky;
-  top: 80px;
+  top: 100px;
   z-index: 999;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin: 0 0 1rem 0;
-  padding: 1rem;
-  background: linear-gradient(90deg, #fa9853, #fb8e42, #f55c47);
-  border-radius: 0;
-  box-shadow: none;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 clamp(2rem, 7vw, 8rem);
+  background: #ff7e6b;
+  scrollbar-width: none;
+  -ms-overflow-style: none;  
+  gap: clamp(1rem, 2.5vw, 2rem);
 }
 
-/* Category Button Base */
+.category-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
 .category-filter-bar .category-button {
+  display: inline-block;
+  white-space: nowrap;
   background: transparent;
   border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
+  border-radius: 22px;
+  padding: 0.6rem 1.5rem;
   font-weight: 500;
-  color: #222;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: #fff5ec;
   cursor: pointer;
   transition: all 0.3s ease;
-  user-select: none;
+  font-family: 'Lato', sans-serif;
 }
 
-/* Hover State */
-.category-filter-bar .category-button:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: #111;
+/* Hover & Focus */
+.category-filter-bar .category-button:hover,
+.category-filter-bar .category-button:focus {
+  outline: 2px solid #fff5ec;
+  outline-offset: 2px;
 }
 
-/* Active State */
+/* Active state */
 .category-filter-bar .category-button.active {
   font-weight: 700;
-  color: #111;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.category-filter-bar .category-button:focus {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* Responsive Tweaks */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .category-filter-bar {
-    gap: 8px;
+    padding: 0 2rem;
+    gap: 1rem;
   }
 
   .category-filter-bar .category-button {
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 1.2rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-filter-bar {
+    padding: 0 1rem;
+    gap: 0.75rem;
+  }
+
+  .category-filter-bar .category-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
   }
 }

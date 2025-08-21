@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: medium;
+
+  height: 100%;
+  margin: 0;
 
   color-scheme: light dark;
   color: rgba(196, 193, 193, 0.87);
@@ -25,19 +30,19 @@ a {
   box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
-
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #f6f5f0;
   color: #333;
+  height: 100%;
+  margin: 0;
 }
 
 h1 {

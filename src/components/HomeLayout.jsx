@@ -16,7 +16,8 @@ function HomeLayout({ children, loading }) {
         </a>
         <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="#about-me" aria-current="page">More Info</a></li>
+            <li><a href="#projects" aria-current="page">projects</a></li>
+            <li><a href="#about-me" aria-current="page">contact</a></li>
           </ul>
         </nav>
       </header>
@@ -28,10 +29,6 @@ function HomeLayout({ children, loading }) {
       </main>
 
       {!loading  && <FooterLayout />}
-
-      <footer className="sticky-footer" role="contentinfo" aria-live="polite">
-        <p>&copy; {new Date().getFullYear()} NPV Portfolio. All rights reserved. Designed by Nuria P.V. & Developed by Nuria P.V's partner.</p>
-      </footer>
     </div>
   );
 }

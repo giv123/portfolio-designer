@@ -1,6 +1,5 @@
 export const CATEGORIES = [
-  { label: "Social", value: "social" },
-  { label: "Email", value: "email" },
-  { label: "Banner", value: "banner" },
-  { label: "Other", value: "other" }
+  { label: "Branding", value: "branding" },
+  { label: "Digital", value: "digital" },
+  { label: "Print", value: "print" }
 ];

@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getPublishedProjects } from "../services/ProjectService";
 import HomeLayout from "../components/HomeLayout";
 import ProjectCard from "../components/ProjectCard";
-import AnimatedBanner from "../components/AnimatedBanner";
+import BannerLayout from "../components/BannerLayout";
 import LoadingSpinner from "../components/LoadingSpinner";
 import CategoryFilterBar from "../components/CategoryFilterBar";
 import { CATEGORIES } from "../constants/Categories";
@@ -26,7 +26,7 @@ function HomePage() {
 
   return (
     <HomeLayout loading={isLoading}>
-      <AnimatedBanner />
+      <BannerLayout />
 
       <CategoryFilterBar
         categories={CATEGORIES}
