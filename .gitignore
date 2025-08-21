@@ -24,7 +24,5 @@ dist-ssr
 *.sw?
 
 firebase-debug
-firestore.rules
 firestore-debug
-storage.rules
 cors.json
