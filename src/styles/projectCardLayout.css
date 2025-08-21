@@ -63,7 +63,6 @@
   transform: scale(1);
 }
 
-/* Overlay for no-image cards (always visible) */
 .no-image-overlay {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(6px);
@@ -79,7 +78,6 @@
   text-align: center;
 }
 
-/* Title */
 .overlay h3,
 .no-image-overlay h3 {
   margin: 0 0 0.75rem;
@@ -89,9 +87,8 @@
   text-shadow: 0 1px 3px rgba(255 255 255 / 0.7);
 }
 
-/* Button */
 .button {
-  background-color: rgba(245, 92, 71, 0.2);
+  background-color: #ff7e6b;
   color: #160101;
   font-weight: 600;
   min-width: 120px;
@@ -113,7 +110,7 @@
 }
 
 .button:hover {
-  background-color: #f55c47;
+  background-color: #ff7e6b;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(245, 92, 71, 0.3);

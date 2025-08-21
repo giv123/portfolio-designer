@@ -1,4 +1,3 @@
-// src/pages/AdminLoginPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -15,11 +14,7 @@ function AdminLoginPage() {
     e.preventDefault();
 
     try {
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user;
-
-      const token = await user.getIdToken();
-      localStorage.setItem('adminToken', token);
+      await signInWithEmailAndPassword(auth, email, password);
 
       navigate('/admin/dashboard');
     } catch (error) {
