@@ -62,7 +62,6 @@ export function resizeAndCropImage(file, targetWidth = 600, targetHeight = 400) 
     img.src = objectUrl;
 
     img.onload = () => {
-      // Revoke the object URL to free memory
       URL.revokeObjectURL(objectUrl);
 
       const canvas = document.createElement('canvas');
@@ -98,9 +97,8 @@ export function resizeAndCropImage(file, targetWidth = 600, targetHeight = 400) 
     };
 
     img.onerror = () => {
-      // Revoke the object URL on error to free memory
       URL.revokeObjectURL(objectUrl);
-      resolve(file); // fallback: return original file if resize fails
+      resolve(file);
     };
   });
 }

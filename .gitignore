@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 firebase-debug
-firestore
+firestore.rules
 firestore-debug
-storage
+storage.rules
