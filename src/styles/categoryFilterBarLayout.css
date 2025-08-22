@@ -38,6 +38,27 @@
   flex-shrink: 0; /* Prevent shrinking */
 }
 
+/* Focus outline for keyboard users (desktop) */
+.category-filter-bar .category-button:focus-visible {
+  outline: 2px solid #fff5ec;
+  outline-offset: 2px;
+  border-radius: 22px;
+}
+
+/* Tap/active feedback for mobile */
+.category-filter-bar .category-button:active {
+  outline: 2px solid #fff5ec;
+  outline-offset: 2px;
+  border-radius: 22px;
+}
+
+/* Hover fallback for desktop */
+.category-filter-bar .category-button:hover {
+  outline: 2px solid #fff5ec;
+  outline-offset: 2px;
+  border-radius: 22px;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   .category-filter-bar {
