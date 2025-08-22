@@ -8,17 +8,26 @@ import '../styles/homeLayout.css';
 function HomeLayout({ children, loading }) {
 
   const location = useLocation();
-
+  
   useEffect(() => {
-    if (location.hash) {
+    if (!loading && location.hash) {
       const el = document.querySelector(location.hash);
       if (el) {
-        setTimeout(() => {
-          el.scrollIntoView();
-        }, 200);
+        const isMobile = window.innerWidth <= 768; // You can tweak this breakpoint
+
+        let yOffset;
+        if (location.hash === "#contact") {
+          yOffset = isMobile ? -198 : -100;
+        } else {
+          yOffset = isMobile ? -298 : -200;
+        }
+
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y });
       }
     }
-  }, [location]);
+  }, [loading, location.hash]);
 
   return (
     <div className="layout">
