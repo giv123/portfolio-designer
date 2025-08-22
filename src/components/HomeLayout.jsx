@@ -13,7 +13,7 @@ function HomeLayout({ children, loading }) {
     if (!loading && location.hash) {
       const el = document.querySelector(location.hash);
       if (el) {
-        const isMobile = window.innerWidth <= 768; // You can tweak this breakpoint
+        const isMobile = window.innerWidth <= 480;
 
         let yOffset;
         if (location.hash === "#contact") {
