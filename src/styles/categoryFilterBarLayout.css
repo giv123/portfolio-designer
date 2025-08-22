@@ -13,7 +13,7 @@
   background: #ff7e6b;
   scrollbar-width: none;
   -ms-overflow-style: none;  
-  gap: clamp(1rem, 2.5vw, 2rem); /* Normal gap */
+  gap: clamp(1rem, 2.5vw, 2rem);
   box-sizing: border-box;
 }
 

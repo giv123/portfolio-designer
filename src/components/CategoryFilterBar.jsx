@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../styles/categoryFilterBarLayout.css";
 
 function CategoryFilterBar({ categories, selectedCategory, onCategoryChange }) {
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (value) => {
+    onCategoryChange(value);
+    navigate("#projects-list");
+  };
+
   return (
     <nav className="category-filter-bar" aria-label="Project categories">
       <div role="group" aria-label="Category buttons">
@@ -10,7 +18,7 @@ function CategoryFilterBar({ categories, selectedCategory, onCategoryChange }) {
           className={["category-button", selectedCategory === "" && "active"]
             .filter(Boolean)
             .join(" ")}
-          onClick={() => onCategoryChange("")}
+          onClick={() => handleCategoryClick("")}
           aria-pressed={selectedCategory === ""}
         >
           All
@@ -22,7 +30,7 @@ function CategoryFilterBar({ categories, selectedCategory, onCategoryChange }) {
             className={["category-button", selectedCategory === value && "active"]
               .filter(Boolean)
               .join(" ")}
-            onClick={() => onCategoryChange(value)}
+            onClick={() => handleCategoryClick(value)}
             aria-pressed={selectedCategory === value}
           >
             {label}
