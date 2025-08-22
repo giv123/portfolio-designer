@@ -40,11 +40,13 @@
 .category-filter-bar .category-button:focus {
   outline: 2px solid #fff5ec;
   outline-offset: 2px;
+  border-radius: 22px;
 }
 
 /* Active state */
 .category-filter-bar .category-button.active {
   font-weight: 700;
+  border-radius: 22px;
 }
 
 /* Responsive Tweaks */
@@ -62,12 +64,6 @@
 
 @media (max-width: 480px) {
   .category-filter-bar {
-    padding: 0 1rem;
-    gap: 0.75rem;
-  }
-
-  .category-filter-bar .category-button {
-    padding: 0.4rem 1rem;
-    font-size: 0.85rem;
+    top: 195px;
   }
 }

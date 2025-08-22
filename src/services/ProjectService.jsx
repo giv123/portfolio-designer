@@ -1,4 +1,4 @@
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, query, where, getDocs, orderBy } from 'firebase/firestore';
 import { db } from '../firebase';
 
 export async function getPublishedProjects(category = "") {
@@ -9,7 +9,7 @@ export async function getPublishedProjects(category = "") {
     filters.push(where("category", "==", category));
   }
 
-  const q = query(baseCollection, ...filters);
+  const q = query(baseCollection, ...filters, orderBy("createdAt", "desc"));
   const snapshot = await getDocs(q);
 
   return snapshot.docs.map(doc => ({
