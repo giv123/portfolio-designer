@@ -36,6 +36,9 @@
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   flex-shrink: 0; /* Prevent shrinking */
+
+  /* Remove default mobile tap highlight */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Focus outline for keyboard users (desktop) */
