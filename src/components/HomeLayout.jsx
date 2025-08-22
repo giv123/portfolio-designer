@@ -19,7 +19,7 @@ function HomeLayout({ children, loading }) {
         if (location.hash === "#contact") {
           yOffset = isMobile ? -198 : -100;
         } else {
-          yOffset = isMobile ? -298 : -200;
+          yOffset = isMobile ? -313 : -215;
         }
 
         const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
