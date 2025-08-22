@@ -4,7 +4,7 @@ import "../styles/categoryFilterBarLayout.css";
 
 function CategoryFilterBar({ categories, selectedCategory, onCategoryChange }) {
   return (
-    <nav className="category-filter-bar" aria-label="Project categories">
+    <nav className="category-filter-bar" aria-label="Project categories" id="projects-list">
       <div role="group" aria-label="Category buttons">
         <button
           className={["category-button", selectedCategory === "" && "active"]
