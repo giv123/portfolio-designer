@@ -5,7 +5,7 @@ import '../styles/projectCardLayout.css';
 
 function ProjectCard({ project }) {
   return (
-    <div className="project-card" id="projects">
+    <div className="project-card">
       {project.imageUrl ? (
         <div className="image-wrapper">
           <img

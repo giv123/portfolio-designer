@@ -23,7 +23,7 @@ function HomeLayout({ children, loading }) {
       </header>
 
       <main className="main-content">
-        <div className="container" id="projects">
+        <div className="container">
           {children}
         </div>
       </main>
