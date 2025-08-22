@@ -13,7 +13,7 @@
   background: #ff7e6b;
   scrollbar-width: none;
   -ms-overflow-style: none;  
-  gap: clamp(1rem, 2.5vw, 2rem);
+  gap: clamp(1rem, 2.5vw, 2rem); /* Normal gap */
   box-sizing: border-box;
 }
 
@@ -36,29 +36,17 @@
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   flex-shrink: 0; /* Prevent shrinking */
-
-  /* Remove default mobile tap highlight */
   -webkit-tap-highlight-color: transparent;
+  outline: none; /* Remove default outline */
+  position: relative;
 }
 
-/* Focus outline for keyboard users (desktop) */
-.category-filter-bar .category-button:focus-visible {
-  outline: 2px solid #fff5ec;
-  outline-offset: 2px;
-  border-radius: 22px;
-}
-
-/* Tap/active feedback for mobile */
+/* Inset box-shadow for focus, hover, and active states */
+.category-filter-bar .category-button:focus,
+.category-filter-bar .category-button:hover,
 .category-filter-bar .category-button:active {
-  outline: 2px solid #fff5ec;
-  outline-offset: 2px;
-  border-radius: 22px;
-}
-
-/* Hover fallback for desktop */
-.category-filter-bar .category-button:hover {
-  outline: 2px solid #fff5ec;
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: inset 0 0 0 2px #fff5ec;
   border-radius: 22px;
 }
 
@@ -66,7 +54,7 @@
 @media (max-width: 768px) {
   .category-filter-bar {
     padding: 0 1rem;
-    gap: 0.8rem;
+    gap: 1rem; /* Slightly smaller gap on mobile */
   }
 
   .category-filter-bar .category-button {
@@ -79,6 +67,6 @@
   .category-filter-bar {
     top: 198px;
     padding: 0 0.5rem;
-    gap: 0.6rem;
+    gap: 0.8rem; /* Smaller gap on small screens */
   }
 }
