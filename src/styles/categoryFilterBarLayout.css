@@ -14,6 +14,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;  
   gap: clamp(1rem, 2.5vw, 2rem);
+  box-sizing: border-box;
 }
 
 .category-filter-bar::-webkit-scrollbar {
@@ -33,27 +34,15 @@
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Lato', sans-serif;
-}
-
-/* Hover & Focus */
-.category-filter-bar .category-button:hover,
-.category-filter-bar .category-button:focus {
-  outline: 2px solid #fff5ec;
-  outline-offset: 2px;
-  border-radius: 22px;
-}
-
-/* Active state */
-.category-filter-bar .category-button.active {
-  font-weight: 700;
-  border-radius: 22px;
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   .category-filter-bar {
-    padding: 0 2rem;
-    gap: 1rem;
+    padding: 0 1rem;
+    gap: 0.8rem;
   }
 
   .category-filter-bar .category-button {
@@ -64,6 +53,8 @@
 
 @media (max-width: 480px) {
   .category-filter-bar {
-    top: 195px;
+    top: 198px;
+    padding: 0 0.5rem;
+    gap: 0.6rem;
   }
 }

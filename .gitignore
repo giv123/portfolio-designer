@@ -26,3 +26,4 @@ dist-ssr
 firebase-debug
 firestore-debug
 cors.json
+.firebase/hosting*
