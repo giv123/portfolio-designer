@@ -16,7 +16,7 @@ function HomeLayout({ children, loading }) {
         </a>
         <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="#projects" aria-current="page">projects</a></li>
+            <li><a href="/" aria-current="page">projects</a></li>
             <li><a href="#about-me" aria-current="page">contact</a></li>
           </ul>
         </nav>
