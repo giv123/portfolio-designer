@@ -50,6 +50,10 @@
   border-radius: 22px;
 }
 
+.category-filter-bar .category-button.active {
+  box-shadow: inset 0 0 0 2px #fff5ec;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   .category-filter-bar {

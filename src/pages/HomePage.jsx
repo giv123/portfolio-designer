@@ -34,7 +34,7 @@ function HomePage() {
         onCategoryChange={setSelectedCategory}
       />
 
-      <div className="project-list">
+      <div className="project-list" id="projects-list">
         {isLoading ? (
           <LoadingSpinner />
         ) : isError ? (

@@ -6,7 +6,7 @@ const FooterLayout = () => {
   return (
     <footer className="footer" role="contentinfo">
       <div className="footer-top">
-        <div className="footer-section about-me" id="about-me">
+        <div className="footer-section about-me">
           <h4>About Me</h4>
           <p>
             From a very young age I’ve been passionate about crafts and have been very creative. I initiated my design career studying Product Design and Modelling at Escola Massana, Barcelona.
@@ -20,7 +20,7 @@ const FooterLayout = () => {
           </p>
         </div>
 
-        <div className="footer-section contact">
+        <div className="footer-section contact" id="contact"> 
           <h4>Contact</h4>
           <p>
             If you’d like to get in touch, please feel free to email me at any time.
