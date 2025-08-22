@@ -14,7 +14,7 @@ function HomeLayout({ children, loading }) {
       const el = document.querySelector(location.hash);
       if (el) {
         setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          el.scrollIntoView();
         }, 200);
       }
     }
