@@ -30,7 +30,6 @@
   transform: scale(1.05);
 }
 
-/* Hover Overlay for image cards */
 .overlay {
   position: absolute;
   inset: 0;
@@ -38,19 +37,15 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 8px;
-
   color: #222;
   opacity: 0;
   visibility: hidden;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
   padding: 2rem 1.5rem;
-
   transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
   pointer-events: none;
   transform: scale(0.95);

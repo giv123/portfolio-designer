@@ -111,18 +111,12 @@
   padding: 15px;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .admin-project-card img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-}
-
-.admin-project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .admin-project-card h3 {
