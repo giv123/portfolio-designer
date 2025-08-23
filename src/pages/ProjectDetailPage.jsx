@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 
 import HomeLayout from "../components/HomeLayout";
@@ -10,7 +10,6 @@ import "../styles/projectDetailLayout.css";
 
 function ProjectDetailPage() {
   const { slug } = useParams();
-  const navigate = useNavigate();
 
   const {
     data: project,
@@ -24,16 +23,8 @@ function ProjectDetailPage() {
     retry: false,
   });
 
-  const handleBack = () => navigate(-1);
-
   return (
     <HomeLayout loading={isLoading}>
-      <div className="project-detail-header">
-        <button className="back-button" onClick={handleBack}>
-          ← Back
-        </button>
-      </div>
-
       {isLoading && <LoadingSpinner />}
 
       {isError && (
@@ -43,13 +34,13 @@ function ProjectDetailPage() {
       )}
 
       {!isLoading && !isError && project && (
-        <>
+        <div className="project-container">
           <h1 className="project-title">{project.title}</h1>
           <p className="project-description">{project.description}</p>
           <ProjectGallery
             images={Array.isArray(project.images) ? project.images : []}
           />
-        </>
+        </div>
       )}
 
       {!isLoading && !isError && !project && (
