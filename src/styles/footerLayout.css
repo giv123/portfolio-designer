@@ -7,7 +7,7 @@
   border-top: 1.5px solid #ff7e6b;
 }
 
-.footer-bot {
+.footer-second {
   width: 100vw;
   max-width: 100vw;
   box-sizing: border-box;
@@ -48,7 +48,6 @@
 .footer-section a {
   color: #ff7e6b;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .footer-bottom {
@@ -71,6 +70,11 @@
     text-align: center;
   }
 
+  .footer-second {
+    padding: 2rem;
+    text-align: center;
+  }
+
   .footer-top {
     flex-direction: column;
     align-items: center;
@@ -84,6 +88,5 @@
   .footer-bottom {
     font-size: 0.85rem;
     letter-spacing: 0.03em;
-    padding: 0.75rem 1rem;
   }
 }
