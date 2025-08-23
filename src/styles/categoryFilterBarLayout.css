@@ -76,11 +76,11 @@
 @media (max-width: 480px) {
   .category-filter-bar {
     top: 198px;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
   }
 
   .category-button-group {
-    gap: 0.8rem;
+    gap: 0;
   }
 
   .category-button {
