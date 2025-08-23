@@ -199,3 +199,16 @@
 .project-image-wrapper:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 480px) {
+  .project-create-form,
+  .project-images-container {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .category-select {
+    background-position: right 0.5rem center;
+    padding-right: 2rem;
+  }
+}
