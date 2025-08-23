@@ -33,7 +33,7 @@ const FooterLayout = () => {
           </div>
         </div>
       </footer>
-      <footer>
+      <footer className="footer-bot" role="contentinfo">
         <div className="footer-bottom">
           <p>
             &copy; {new Date().getFullYear()} NPV Portfolio. All rights reserved.

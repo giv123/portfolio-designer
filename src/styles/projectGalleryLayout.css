@@ -28,7 +28,6 @@
   padding: 2rem;
 }
 
-/* Optional: reduce padding on small screens */
 @media (max-width: 768px) {
   .image-gallery {
     gap: 0.75rem;
