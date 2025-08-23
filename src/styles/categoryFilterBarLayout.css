@@ -1,10 +1,9 @@
 .category-filter-bar {
-  height: 100px;
+  height: 100px; 
   position: sticky;
   top: 100px;
   z-index: 999;
   display: flex;
-  flex-direction: row;
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
@@ -12,8 +11,7 @@
   padding: 0 clamp(2rem, 7vw, 8rem);
   background: #ff7e6b;
   scrollbar-width: none;
-  -ms-overflow-style: none;  
-  gap: clamp(1rem, 2.5vw, 2rem);
+  -ms-overflow-style: none;
   box-sizing: border-box;
 }
 
@@ -21,7 +19,15 @@
   display: none;
 }
 
-.category-filter-bar .category-button {
+.category-button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  flex-wrap: nowrap;
+}
+
+.category-button {
   display: inline-block;
   white-space: nowrap;
   background: transparent;
@@ -35,33 +41,33 @@
   transition: all 0.3s ease;
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
   -webkit-tap-highlight-color: transparent;
-  outline: none; /* Remove default outline */
+  outline: none;
   position: relative;
 }
 
-/* Inset box-shadow for focus, hover, and active states */
-.category-filter-bar .category-button:focus,
-.category-filter-bar .category-button:hover,
-.category-filter-bar .category-button:active {
+.category-button:focus,
+.category-button:hover,
+.category-button:active {
   outline: none;
   box-shadow: inset 0 0 0 2px #fff5ec;
-  border-radius: 22px;
 }
 
-.category-filter-bar .category-button.active {
+.category-button.active {
   box-shadow: inset 0 0 0 2px #fff5ec;
 }
 
-/* Responsive Tweaks */
 @media (max-width: 768px) {
   .category-filter-bar {
     padding: 0 1rem;
-    gap: 1rem; /* Slightly smaller gap on mobile */
   }
 
-  .category-filter-bar .category-button {
+  .category-button-group {
+    gap: 1rem;
+  }
+
+  .category-button {
     padding: 0.5rem 1.2rem;
     font-size: 0.9rem;
   }
@@ -71,6 +77,14 @@
   .category-filter-bar {
     top: 198px;
     padding: 0 0.5rem;
-    gap: 0.8rem; /* Smaller gap on small screens */
+  }
+
+  .category-button-group {
+    gap: 0.8rem;
+  }
+
+  .category-button {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
   }
 }

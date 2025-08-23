@@ -13,7 +13,7 @@ function CategoryFilterBar({ categories, selectedCategory, onCategoryChange }) {
 
   return (
     <nav className="category-filter-bar" aria-label="Project categories">
-      <div role="group" aria-label="Category buttons">
+      <div className="category-button-group" role="group" aria-label="Category buttons">
         <button
           className={["category-button", selectedCategory === "" && "active"]
             .filter(Boolean)
