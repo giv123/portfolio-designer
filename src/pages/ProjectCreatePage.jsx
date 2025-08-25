@@ -14,7 +14,8 @@ function ProjectCreate() {
 
   const [form, setForm] = useState({
     title: '',
-    description: '',
+    briefDescription: '',
+    workDescription: '',
     category: '',
     slug: '',
     published: false,
@@ -89,11 +90,12 @@ function ProjectCreate() {
       const uniqueSlug = await ensureUniqueSlug(baseSlug);
 
       const newProject = {
-        title: form.title,
-        description: form.description,
-        category: form.category.toLowerCase(),
-        slug: uniqueSlug,
-        published: form.published,
+        title: form.title || '',
+        briefDescription: form.briefDescription || '',
+        workDescription: form.workDescription || '',
+        category: form.category.toLowerCase() || '',
+        slug: uniqueSlug || '',
+        published: form.published || false,
         imageUrl: '',
         imagePath: '',
         images: [],
@@ -167,10 +169,21 @@ function ProjectCreate() {
         </label>
 
         <label>
-          Description
+          Brief Description
           <textarea
-            name="description"
-            value={form.description}
+            name="briefDescription"
+            value={form.briefDescription}
+            onChange={handleChange}
+            required
+            rows={5}
+          />
+        </label>
+
+        <label>
+          Work Description
+          <textarea
+            name="workDescription"
+            value={form.workDescription}
             onChange={handleChange}
             required
             rows={5}

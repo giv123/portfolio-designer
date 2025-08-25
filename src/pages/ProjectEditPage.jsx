@@ -17,7 +17,8 @@ function ProjectEdit() {
 
   const [form, setForm] = useState({
     title: '',
-    description: '',
+    briefDescription: '',
+    workDescription: '',
     category: '',
     slug: '',
     published: false,
@@ -46,8 +47,9 @@ function ProjectEdit() {
           const data = docSnap.data();
           setForm({
             title: data.title || '',
-            description: data.description || '',
-            category: data.category || '',
+            briefDescription: data.briefDescription || '',
+            workDescription: data.workDescription || '',
+            category: data.category.toLowerCase() || '',
             slug: data.slug || '',
             published: data.published || false,
             imageUrl: data.imageUrl || '',
@@ -242,10 +244,21 @@ function ProjectEdit() {
         </label>
 
         <label>
-          Description
+          Brief Description
           <textarea
-            name="description"
-            value={form.description}
+            name="briefDescription"
+            value={form.briefDescription}
+            onChange={handleChange}
+            rows={5}
+            required
+          />
+        </label>
+
+        <label>
+          Work Description
+          <textarea
+            name="workDescription"
+            value={form.workDescription}
             onChange={handleChange}
             rows={5}
             required

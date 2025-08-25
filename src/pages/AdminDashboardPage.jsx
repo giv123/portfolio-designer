@@ -59,7 +59,7 @@ function ProjectManage() {
       )}
 
       {!isLoading && projects?.length === 0 && (
-        <p>No projects found.</p>
+        <p className="admin-error-text">No projects found.</p>
       )}
 
       {!isLoading && projects?.length > 0 && (

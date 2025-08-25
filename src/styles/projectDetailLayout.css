@@ -20,8 +20,8 @@
   width: 100%;
   padding: 5px 0;
   line-height: 1.75;
-  margin: 2rem auto 2rem auto;
-  text-align: justify;
+  margin: 10px auto 2rem auto;
+  text-align: left;
 }
 
 .project-error-message {
@@ -31,6 +31,16 @@
   font-weight: 500;
 }
 
+.description-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.description-container > div {
+  flex: 1;
+}
+
 @media (max-width: 768px) {
   .project-container {
     padding: 2rem;
@@ -38,9 +48,14 @@
 
   .project-title {
     margin: 0;
-    text-align: center;
+    padding-bottom: 2rem;
   }
+
   .project-description {
-    text-align: center;
+    margin: 0;
+  }
+
+  .description-container {
+    flex-direction: column;
   }
 }

@@ -55,7 +55,7 @@ export async function safeDeleteImage(path) {
   }
 }
 
-export function resizeAndCropImage(file, targetWidth = 600, targetHeight = 400) {
+export function resizeAndCropImage(file, targetWidth = 1200, targetHeight = 1200) {
   return new Promise((resolve) => {
     const img = new Image();
     const objectUrl = URL.createObjectURL(file);

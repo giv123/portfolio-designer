@@ -36,10 +36,19 @@ function ProjectDetailPage() {
       {!isLoading && !isError && project && (
         <div className="project-container">
           <h1 className="project-title">{project.title}</h1>
-          <p className="project-description">{project.description}</p>
-          <ProjectGallery
-            images={Array.isArray(project.images) ? project.images : []}
-          />
+            <div className="description-container">
+              <div>
+                <h4>Brief</h4>
+                <p className="project-description">{project.briefDescription}</p>
+              </div>
+              <div>
+                <h4>Work</h4>
+                <p className="project-description">{project.workDescription}</p>
+              </div>
+            </div>
+            <ProjectGallery
+              images={Array.isArray(project.images) ? project.images : []}
+            />
         </div>
       )}
 
