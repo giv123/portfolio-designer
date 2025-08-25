@@ -10,8 +10,8 @@
   min-width: 374px;
 
   color-scheme: light dark;
-  color: rgba(196, 193, 193, 0.87);
-  background-color: #f6f5f0;
+  color: rgba(48, 13, 13, 0.87);
+  background-color: #fff5ec;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,7 +21,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ff7e6b;
   text-decoration: inherit;
 }
 
@@ -40,8 +40,8 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #f6f5f0;
-  color: #333;
+  background-color: #fff5ec;
+  color: #ff7e6b;
   height: 100%;
   margin: 0;
 }

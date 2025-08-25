@@ -9,7 +9,6 @@
 .main-content {
   flex: 1;
   width: 100%;
-  background: #fff8f0;
   border-radius: 12px;
 }
 
@@ -17,17 +16,6 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto 2rem auto;
-}
-
-.page-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  width: 100%;
-  word-break: break-word;
-  padding-top: 1.5rem;
-  color: #f55c47;
-  font-weight: 700;
 }
 
 .sidebar {
@@ -66,7 +54,6 @@
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #ff7e6b;
   padding: 6px 18px;
   border-radius: 12px;
   font-weight: 500;
@@ -93,7 +80,6 @@
 .no-projects-message {
   text-align: center;
   font-size: 1.2rem;
-  color: #ff7e6b;
   margin: 2rem 0;
   font-weight: 600;
 }

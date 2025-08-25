@@ -1,15 +1,28 @@
 /* Base Layout */
 .admin-layout {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #fff8f0;
+}
+
+.admin-main-content {
+  flex: 1;
   width: 100%;
   background: #fff8f0;
-  overflow-x: hidden;
+  border-radius: 12px;
+}
+
+.admin-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 2rem auto;
 }
 
 /* Top Nav (was Sidebar) */
 .admin-sidebar {
+  height: 100px;
   width: 100%;
   background: linear-gradient(180deg, #2d3748, #4a5568);
   padding: 1rem 2rem;
@@ -72,21 +85,6 @@
   color: white;
   font-weight: 700;
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6);
-}
-
-/* Main Content */
-.admin-main-content {
-  flex: 1;
-  width: 100%;
-  background: #fff8f0;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.admin-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto 2rem auto;
 }
 
 .admin-page-title {
@@ -209,9 +207,9 @@
   margin-top: 1rem;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .admin-sidebar {
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
