@@ -7,8 +7,11 @@ import '../styles/homeLayout.css';
 
 function HomeLayout({ children, loading }) {
 
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const location = useLocation();
-  
   useEffect(() => {
     if (!loading && location.hash) {
       const el = document.querySelector(location.hash);
@@ -37,6 +40,7 @@ function HomeLayout({ children, loading }) {
             src="/images/ndp-logo.png"
             alt="Nuria Design Portfolio"
             className="sidebar-logo"
+            onClick={handleClick}
           />
         </Link>
         <nav aria-label="Primary navigation">
