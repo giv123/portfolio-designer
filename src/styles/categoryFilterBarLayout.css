@@ -5,8 +5,7 @@
   z-index: 999;
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   white-space: nowrap;
   padding: 0 clamp(2rem, 7vw, 8rem) 0 8rem;
   background: #ff7e6b;
@@ -75,7 +74,6 @@
 
 @media (max-width: 480px) {
   .category-filter-bar {
-    top: 198px;
     padding: 0 2rem;
   }
 

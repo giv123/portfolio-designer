@@ -44,7 +44,7 @@
 
 .sidebar nav ul {
   display: flex;
-  gap: 28px;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -109,13 +109,6 @@
 }
 
 @media (max-width: 480px) {
-  .sidebar {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 1rem 2rem;
-  }
-
   .sidebar-logo {
     max-width: 104px;
   }
@@ -124,16 +117,8 @@
     width: 100%;
   }
 
-  .sidebar nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 12px;
-  }
-
   .sidebar nav ul li a {
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 5px;
   }
 }

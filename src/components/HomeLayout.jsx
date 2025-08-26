@@ -16,13 +16,11 @@ function HomeLayout({ children, loading }) {
     if (!loading && location.hash) {
       const el = document.querySelector(location.hash);
       if (el) {
-        const isMobile = window.innerWidth <= 480;
-
         let yOffset;
         if (location.hash === "#contact") {
-          yOffset = isMobile ? -198 : -100;
+          yOffset = -100;
         } else {
-          yOffset = isMobile ? -313 : -215;
+          yOffset = -215;
         }
 
         const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
