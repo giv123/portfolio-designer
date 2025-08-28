@@ -13,7 +13,7 @@ export function useProjects(selectedCategory) {
         filters.push(where('category', '==', selectedCategory));
       }
 
-      filters.push(orderBy('createdAt', 'desc'));
+      filters.push(orderBy('updatedAt', 'desc'));
 
       const projectsQuery = query(baseCollection, ...filters);
 

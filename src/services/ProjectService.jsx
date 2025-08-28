@@ -9,7 +9,7 @@ export async function getPublishedProjects(category = "") {
     filters.push(where("category", "==", category));
   }
 
-  const q = query(baseCollection, ...filters, orderBy("createdAt", "desc"));
+  const q = query(baseCollection, ...filters, orderBy("updatedAt", "desc"));
   const snapshot = await getDocs(q);
 
   return snapshot.docs.map(doc => ({

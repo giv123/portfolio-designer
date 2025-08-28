@@ -32,7 +32,7 @@ function ProjectManage() {
       }
 
       await deleteProjectWithAssets(project);
-      await queryClient.invalidateQueries(['projects']); // refetch after deletion
+      await queryClient.invalidateQueries(['projects']);
 
       alert('✅ Project deleted successfully.');
     } catch (err) {

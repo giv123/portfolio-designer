@@ -36,7 +36,6 @@ function ProjectEdit() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Fetch project data on mount or when id changes
   useEffect(() => {
     async function fetchProject() {
       try {
