@@ -36,7 +36,7 @@ const FooterLayout = () => {
       <footer className="footer-second" role="contentinfo">
         <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} NPV Portfolio. All rights reserved. Designed by Nuria P.V. and Developed by G.M.G.
+            &copy; {new Date().getFullYear()} NPV portfolio. All rights reserved. Designed by Nuria PV and developed by GMG.
           </p>
         </div>
       </footer>

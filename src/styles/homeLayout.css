@@ -99,7 +99,7 @@
   }
 
   .sidebar-logo {
-    max-width: 120px;
+    max-width: 180px;
   }
 
   .sidebar nav ul li a {
@@ -110,7 +110,7 @@
 
 @media (max-width: 480px) {
   .sidebar-logo {
-    max-width: 104px;
+    max-width: 80px;
   }
 
   .sidebar nav {

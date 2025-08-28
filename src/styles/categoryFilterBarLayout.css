@@ -59,7 +59,10 @@
 
 @media (max-width: 768px) {
   .category-filter-bar {
+    justify-content: center;
     padding: 0 1rem;
+    overflow: visible;
+    white-space: normal;
   }
 
   .category-button-group {

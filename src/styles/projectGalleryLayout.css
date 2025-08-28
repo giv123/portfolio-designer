@@ -32,6 +32,7 @@
   .image-gallery {
     min-height: 50vh;
     gap: 0.75rem;
+    padding: 0 20px;
   }
 
   .no-gallery-images-message {
