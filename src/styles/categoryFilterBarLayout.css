@@ -33,12 +33,12 @@
   border: none;
   border-radius: 22px;
   padding: 0.6rem 1.5rem;
-  font-weight: 500;
-  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-weight: 100;
+  font-size: clamp(16px, 1vw, 20px);
   color: #fff5ec;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   flex-shrink: 0;
   -webkit-tap-highlight-color: transparent;
@@ -71,7 +71,6 @@
 
   .category-button {
     padding: 0.5rem 1.2rem;
-    font-size: 0.9rem;
   }
 }
 
@@ -86,6 +85,5 @@
 
   .category-button {
     padding: 0.45rem 1rem;
-    font-size: 0.85rem;
   }
 }

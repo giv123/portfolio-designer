@@ -8,18 +8,23 @@
 
 .project-title {
   width: 100%;
-  font-weight: 900;
-  font-size: 2rem;
   margin: 2rem auto 2rem auto;
   padding: 1.5rem 0;
   text-align: left;
   line-height: 1.3;
 }
 
+.project-subtitle {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0 auto 0 auto;
+  text-align: left;
+}
+
 .project-description {
   width: 100%;
   padding: 5px 0;
-  line-height: 1.75;
+  line-height: 1.5;
   margin: 10px auto 2rem auto;
   text-align: left;
 }
@@ -51,7 +56,7 @@
     padding: 2rem;
   }
 
-  .project-description {
+  .project-subtitle, .project-description {
     margin: 0;
     padding: 1rem 2rem;
   }

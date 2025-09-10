@@ -56,9 +56,8 @@
   text-decoration: none;
   padding: 6px 18px;
   border-radius: 12px;
-  font-weight: 500;
-  font-size: 1rem;
   display: block;
+  font-size: clamp(16px, 2vw, 25px);
 }
 
 .project-list {
@@ -80,9 +79,7 @@
 .error-message,
 .no-projects-message {
   text-align: center;
-  font-size: 1.2rem;
   margin: 2rem 0;
-  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +100,6 @@
   }
 
   .sidebar nav ul li a {
-    font-size: 0.9rem;
     padding: 4px 12px;
   }
 }

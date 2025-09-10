@@ -33,16 +33,7 @@ function HomeLayout({ children, loading }) {
   return (
     <div className="layout">
       <header className="sidebar" role="banner" aria-label="Main navigation">
-        <Link to="/">
-          <picture onClick={handleClick}>
-            <source media="(max-width: 480px)" srcSet="/images/thumbnail_Icon.png" />
-            <img
-              src="/images/ndp-logo.png"
-              alt="NPV portfolio"
-              className="sidebar-logo"
-            />
-          </picture>
-        </Link>
+        <Link to="/" onClick={handleClick}><h3>NPV portfolio</h3></Link>
         <nav aria-label="Primary navigation">
           <ul>
             <li>

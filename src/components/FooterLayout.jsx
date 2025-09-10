@@ -7,28 +7,26 @@ const FooterLayout = () => {
     <>
       <footer className="footer" role="contentinfo">
         <div className="footer-top">
-          <div className="footer-section about-me">
-            <h4>About Me</h4>
+          <div className="footer-section">
+            <h1>About Me</h1>
             <p>
-              From a very young age I’ve been passionate about crafts and have been very creative. I initiated my design career studying Product Design and Modelling at Escola Massana, Barcelona.
+              I am a Graphic Designer with over 8 years of experience creating impactful digital and print visuals.
             </p>
             <p>
-              Over the years I shifted my career towards Graphic Design and since I moved to Glasgow in 2016 that’s what I’ve been doing. 
-              Working across start-ups, community groups, in-house design teams and as a freelance designer, I gained valuable experience in creative problem solving, project management, communication and team collaboration.
+              My purpose is to create design solutions that help clients connect better with their audience and achieve their goals.
             </p>
             <p>
-              My design style is usually described as neat and thoughtful, with well structured messaging and visually appealing compositions. 
+              Having worked in a variety of industries - from startups to e-commerce, and with a passion for sustainability, I bring a unique perspective to each project - grounded in excellence, clarity, and clean, structured design that communicates with simplicity and intention.
+            </p>
+            <p>
+              I thrive collaborating with others and meeting deadlines, adapting my approach to capture my clients needs ensuring a strategic information hierarchy and high-converting call to actions.
             </p>
           </div>
 
-          <div className="footer-section contact" id="contact"> 
-            <h4>Contact</h4>
+          <div className="footer-section" id="contact"> 
+            <h1>Contact</h1>
             <p>
-              If you’d like to get in touch, please feel free to email me at any time.
-              I look forward to the opportunity to discuss how I can contribute to your project.
-            </p>
-            <p>
-              <a href="mailto:nuriaperezviura@gmail.com" aria-label="Send email to Nuria Perez Viura">nuriaperezviura@gmail.com</a>
+              I look forward to the opportunity to discuss how I can contribute to your project. Drop me an email at <a href="mailto:nuriaperezviura@gmail.com" aria-label="Send email to Nuria Perez Viura">nuriaperezviura@gmail.com</a>.
             </p>
           </div>
         </div>

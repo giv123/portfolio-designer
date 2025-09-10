@@ -28,20 +28,22 @@
   color: #ff7e6b;
 }
 
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-weight: 900;
-  font-size: 2rem;
+.footer-section h1 {
+  font-size: clamp(35px, 4vw, 60px);
+  margin-bottom: 0.8rem;
 }
 
 .footer-section p {
-  font-weight: 400;
-  margin-bottom: 1rem;
-  font-size: 20px;
+  font-size: clamp(16px, 1vw, 20px);
+  margin-bottom: 0.8em;
+  line-height: 1.5;
 }
 
 .footer-section a {
   text-decoration: none;
+  font-size: clamp(16px, 1vw, 20px);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .footer-bottom {
@@ -49,7 +51,6 @@
   margin: 0 auto;
   text-align: left;
   font-size: 0.95rem;
-  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
@@ -72,9 +73,5 @@
   .footer-bottom {
     font-size: 0.85rem;
     letter-spacing: 0.03em;
-  }
-
-  .footer-section h4 {
-    font-size: 1.5rem;
   }
 }

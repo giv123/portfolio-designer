@@ -38,11 +38,11 @@ function ProjectDetailPage() {
           <h1 className="project-title">{project.title}</h1>
             <div className="description-container">
               <div>
-                <h4>Brief</h4>
+                <p className="project-subtitle">BRIEF</p>
                 <p className="project-description">{project.briefDescription}</p>
               </div>
               <div>
-                <h4>Work</h4>
+                <p className="project-subtitle">WORK</p>
                 <p className="project-description">{project.workDescription}</p>
               </div>
             </div>

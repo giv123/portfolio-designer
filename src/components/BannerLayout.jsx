@@ -7,9 +7,9 @@ function Banner() {
       <div className="banner-grid">
         <div className="banner-content">
           <h1 className="banner-title">Explore my Creative Work.</h1>
-          <p className="banner-subtitle">
+          <h2 className="banner-subtitle">
             Branding, E-commerce, Web, Socials, Emails, and Print Design.
-          </p>
+          </h2>
         </div>
       </div>
     </div>

@@ -18,19 +18,16 @@
 }
 
 .banner-content {
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .banner-title {
-  font-weight: 700;
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
-  margin-bottom: 1rem;
+  font-size: clamp(35px, 4vw, 60px);
+  margin-bottom: 0.8rem;
 }
 
 .banner-subtitle {
-  font-weight: 500;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  line-height: 1.4;
+  font-size: clamp(20px, 2.5vw, 35px);
 }
 
 /* Smaller devices tweaks */
