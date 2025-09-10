@@ -33,7 +33,7 @@ function HomeLayout({ children, loading }) {
   return (
     <div className="layout">
       <header className="sidebar" role="banner" aria-label="Main navigation">
-        <Link to="/" onClick={handleClick}><h3>NPV portfolio</h3></Link>
+        <Link to="/" onClick={handleClick}><h3 className="sidebar-logo">NPV portfolio</h3></Link>
         <nav aria-label="Primary navigation">
           <ul>
             <li>
