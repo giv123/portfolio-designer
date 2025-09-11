@@ -34,14 +34,14 @@
 }
 
 .footer-section p {
-  font-size: clamp(16px, 1vw, 20px);
+  font-size: clamp(16px, 2vw, 20px);
   margin-bottom: 0.8em;
   line-height: 1.5;
 }
 
 .footer-section a {
   text-decoration: none;
-  font-size: clamp(16px, 1vw, 20px);
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
   line-height: 1.5;
 }
