@@ -59,9 +59,14 @@
     padding: 2rem;
   }
 
-  .project-subtitle, .project-description {
+  .project-subtitle {
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .project-description {
+    margin: 0;
+    padding: 0.5rem 2rem 0.5rem 2rem;
   }
 
   .description-container {
