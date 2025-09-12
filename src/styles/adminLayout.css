@@ -36,7 +36,7 @@
 }
 
 .admin-sidebar-title {
-  font-size: 1.5rem;
+  font-size: clamp(20px, 2.5vw, 35px);
   font-weight: 600;
   color: #a3bffa;
   margin-right: 2rem;
@@ -60,7 +60,7 @@
 .admin-sidebar a {
   text-decoration: none;
   color: #cbd5e1;
-  font-weight: 500;
+  font-size: clamp(16px, 2vw, 25px);
   padding: 8px 12px;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -82,13 +82,12 @@
 }
 
 .admin-page-title {
-  font-size: 2.4rem;
   margin: 2rem 0 1rem;
   text-align: center;
   word-break: break-word;
   color: #1f2937;
   font-weight: 700;
-  letter-spacing: 1.2px;
+  font-size: clamp(35px, 4vw, 60px);
 }
 
 .admin-project-list {
@@ -115,13 +114,11 @@
 }
 
 .admin-project-card h3 {
-  font-size: 1.25rem;
   margin: 1rem;
   color: #222;
 }
 
 .admin-project-card p {
-  font-size: 1rem;
   margin: 0 1rem 1.5rem;
   color: #666;
 }
@@ -221,19 +218,11 @@
   .admin-sidebar a {
     width: 100%;
   }
-
-  .admin-page-title {
-    font-size: 1.8rem;
-  }
 }
 
 @media (max-width: 480px) {
   .admin-project-list {
     grid-template-columns: 1fr;
-  }
-
-  .admin-page-title {
-    font-size: 1.4rem;
   }
 
   .admin-card-actions {
