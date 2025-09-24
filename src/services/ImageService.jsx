@@ -37,6 +37,40 @@ export async function uploadGalleryImages(projectId, files) {
   return uploads;
 }
 
+export async function uploadCarouselDesktopImages(files) {
+  const uploads = [];
+
+  for (const file of files) {
+    const fileName = generateImageFileName(file.name);
+    const filePath = `carousel-desktop-images/${fileName}`;
+    const fileRef = ref(storage, filePath);
+
+    await uploadBytes(fileRef, file);
+    const url = await getDownloadURL(fileRef);
+    
+    uploads.push({ url, name: fileName, path: filePath });
+  }
+
+  return uploads;
+}
+
+export async function uploadCarouselMobileImages(files) {
+  const uploads = [];
+
+  for (const file of files) {
+    const fileName = generateImageFileName(file.name);
+    const filePath = `carousel-mobile-images/${fileName}`;
+    const fileRef = ref(storage, filePath);
+
+    await uploadBytes(fileRef, file);
+    const url = await getDownloadURL(fileRef);
+    
+    uploads.push({ url, name: fileName, path: filePath });
+  }
+
+  return uploads;
+}
+
 export async function safeDeleteImage(path) {
   if (!path) return;
 

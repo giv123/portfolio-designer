@@ -11,7 +11,8 @@ function AdminLayout({ children }) {
           <ul>
             <li><Link to="/">Projects Home</Link></li>
             <li><Link to="/admin/dashboard">Manage Projects</Link></li>
-            <li><Link to="/projects/create">Create New Project</Link></li>
+            <li><Link to="/admin/projects/create">Create New Project</Link></li>
+            <li><Link to="/admin/carousel/update">Manage Carousel Images</Link></li>
             <li><Link to="/admin/logout">Admin Logout</Link></li>
           </ul>
         </nav>
