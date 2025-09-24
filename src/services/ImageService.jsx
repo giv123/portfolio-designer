@@ -89,7 +89,7 @@ export async function safeDeleteImage(path) {
   }
 }
 
-export function resizeAndCropImage(file, targetWidth = 1200, targetHeight = 1200) {
+export function resizeAndCropImage(file, targetWidth = 1080, targetHeight = 1080) {
   return new Promise((resolve) => {
     const img = new Image();
     const objectUrl = URL.createObjectURL(file);
